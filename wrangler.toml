@@ -1,0 +1,20 @@
+name = "cloudflare-vite-get-started"
+compatibility_date = "2025-05-08"
+main = "./src/worker.ts"
+
+vars = {}
+
+[dev]
+# We use preview.localhost to mimic the preview.webflow.com format the webflow client bundle expects to read from once loaded
+ip = "preview.localhost"
+local_protocol = "https"
+
+[assets]
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[env.staging]
+vars = {}
+
+[env.production]
+vars = {}

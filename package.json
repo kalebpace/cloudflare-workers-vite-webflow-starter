@@ -1,0 +1,22 @@
+{
+  "name": "cloudflare-vite-get-started",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite build && vite preview",
+    "deploy": "pnpm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.2.4",
+    "@types/node": "^22.15.29",
+    "@vitejs/plugin-basic-ssl": "^2.0.0",
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4",
+    "wrangler": "^4.16.1"
+  }
+}
