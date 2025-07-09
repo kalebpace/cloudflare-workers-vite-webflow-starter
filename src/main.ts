@@ -43,6 +43,7 @@ if (isWebflowPreviewEnv) {
   observer.observe(document, mutationObserverConfig);
 } else {
   _document = document;
+  init(_document);
 }
 
 export function init(injectedDocument: Document) {
